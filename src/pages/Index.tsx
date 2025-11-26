@@ -8,10 +8,12 @@ const Index = () => {
       <div className="max-w-4xl mx-auto px-6 py-12 space-y-16">
         
         <section className="text-center space-y-6 animate-fade-in">
-          <div className="w-32 h-32 mx-auto rounded-full bg-gradient-to-br from-primary to-secondary p-1 animate-scale-in">
-            <div className="w-full h-full rounded-full bg-white flex items-center justify-center text-5xl">
-              👤
-            </div>
+          <div className="w-32 h-32 mx-auto rounded-full bg-gradient-to-br from-primary to-secondary p-1 animate-scale-in overflow-hidden">
+            <img 
+              src="https://cdn.poehali.dev/files/d962d983-6a55-4505-a1b0-5f00738f5273.jpg" 
+              alt="Александра Петрова"
+              className="w-full h-full rounded-full object-cover"
+            />
           </div>
           
           <div className="space-y-4">
