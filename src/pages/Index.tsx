@@ -16,18 +16,7 @@ const Index = () => {
             />
           </div>
           
-          <div className="space-y-4">
-            <h1 className="font-heading text-5xl md:text-6xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
-              Александра Петрова
-            </h1>
-            <p className="text-2xl md:text-3xl font-heading font-semibold text-foreground">
-              Психолог-трансформатор
-            </p>
-            <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-              Помогаю освободиться от эмоциональных блоков, убрать симптомы тревоги и страхов, 
-              трансформировать глубинные убеждения, которые мешают жить полной жизнью
-            </p>
-          </div>
+          <div className="space-y-4"></div>
 
           <div className="flex flex-wrap justify-center gap-3 pt-4">
             <div className="flex items-center gap-2 px-4 py-2 bg-primary/10 rounded-full">
