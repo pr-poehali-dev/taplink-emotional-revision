@@ -21,7 +21,8 @@ const Index = () => {
               Кристина Веретильная
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">Дипломированный психолог, энерготерапевт, расстановщик, 
-НЛП-практик, ментор женской силы и трансформации.</p>
+НЛП-практик, ментор женской силы и трансформации.
+</p>
             <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
               Помогаю женщинам восстановить баланс, вернуть энергию и любовь к себе.
             </p>
