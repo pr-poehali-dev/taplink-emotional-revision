@@ -20,9 +20,8 @@ const Index = () => {
             <h1 className="font-heading text-5xl md:text-6xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
               Кристина Веретильная
             </h1>
-            <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-              Дипломированный психолог, энерготерапевт, расстановщик, НЛП-практик, ментор женской силы и трансформации.
-            </p>
+            <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">Дипломированный психолог, энерготерапевт, расстановщик, 
+НЛП-практик, ментор женской силы и трансформации.</p>
             <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
               Помогаю женщинам восстановить баланс, вернуть энергию и любовь к себе.
             </p>
