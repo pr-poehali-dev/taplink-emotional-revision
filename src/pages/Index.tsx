@@ -131,14 +131,16 @@ const Index = () => {
               {
                 icon: "MessageCircle",
                 title: "Индивидуальная терапия",
-                price: "от 5000 ₽",
+                price: "15 000 ₽",
+                url: "https://payform.ru/kd7f2rD/",
                 desc: "Если ты чувствуешь: «мне плохо, но я не понимаю, с чего начать» — начни с одного шага. Одна сессия — и ты уже чувствуешь, что можешь дышать.",
                 benefits: ["Найдём корень проблемы (он не там, где ты думаешь)", "Высвободим эмоции, которые тебя держат", "Активируем ресурсное состояние", "Почувствуешь облегчение, ясность и силу"]
               },
               {
                 icon: "Users",
                 title: "ПРАКТИКУМ «МОЙ РОД»",
-                price: "от 7000 ₽",
+                price: "1 499 ₽",
+                url: "https://payform.ru/tk7f2wx/",
                 desc: "Это не просто практикум. Это — точка взросления и выхода из боли прошлого. Для тех, кто устал жить обидами и чужими ожиданиями.",
                 benefits: ["Исцеление отношений с родителями", "Выход в благодарность, отпускание вины и обид", "Получение энергии Рода и внутренней опоры", "Включение взрослой части, способной создавать и выбирать"]
               },
@@ -146,13 +148,15 @@ const Index = () => {
                 icon: "GraduationCap",
                 title: "Обучение методу '4 ключа'",
                 price: "индивидуально",
+                url: "http://t.me/krisvluck",
                 desc: "Это целостная система, которая возвращает человеку право на жизнь в достоинстве, любви и изобилии. Для психологов это мощный инструмент, объединяющий работу с родовыми программами, телом и подсознанием в рамках краткосрочной глубинной терапии.",
                 benefits: ["Путь от боли и истощения к наполненности", "Работа с родовыми программами и подсознанием", "Краткосрочная глубинная терапия", "Авторская программа с супервизией"]
               },
               {
                 icon: "Video",
                 title: "Онлайн-консультации",
-                price: "от 4500 ₽",
+                price: "",
+                url: "",
                 desc: "Работаем из любой точки мира. Эффективность не уступает очным сессиям.",
                 benefits: ["Удобный формат", "Экономия времени", "Та же эффективность"]
               }
@@ -166,11 +170,13 @@ const Index = () => {
                     <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-primary to-secondary flex items-center justify-center">
                       <Icon name={service.icon} size={28} className="text-white" />
                     </div>
-                    <div className="text-right">
-                      <div className="text-2xl font-bold font-heading text-primary">
-                        {service.price}
+                    {service.price && (
+                      <div className="text-right">
+                        <div className="text-2xl font-bold font-heading text-primary">
+                          {service.price}
+                        </div>
                       </div>
-                    </div>
+                    )}
                   </div>
 
                   <div className="space-y-3">
@@ -191,9 +197,20 @@ const Index = () => {
                     ))}
                   </div>
 
-                  <Button className="w-full font-heading font-semibold text-base h-12">
-                    Записаться
-                  </Button>
+                  {service.url ? (
+                    <Button 
+                      asChild
+                      className="w-full font-heading font-semibold text-base h-12"
+                    >
+                      <a href={service.url} target="_blank" rel="noopener noreferrer">
+                        Записаться
+                      </a>
+                    </Button>
+                  ) : (
+                    <Button className="w-full font-heading font-semibold text-base h-12">
+                      Записаться
+                    </Button>
+                  )}
                 </div>
               </Card>
             ))}
